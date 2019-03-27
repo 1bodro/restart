@@ -1,0 +1,330 @@
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto 4em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*    width: 90%;*/
+    max-width: 70em;
+}
+
+.main_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    color: #000;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+
+.teacher-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    max-width: 70em;
+    -webkit-box-shadow: rgba(83, 85, 83, 0.35) 0px 0px 15px 3px;
+    box-shadow: rgba(83, 85, 83, 0.35) 0px 0px 15px 3px;
+    margin: 2em auto;
+    border-radius: 1em;
+    padding: 3em;
+}
+
+.teacher-box_info,
+.teacher-box_photo,
+.teacher-box_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.teacher-box_info {
+    margin-right: 3.5em;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.teacher-box_info-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 12em;
+    height: 12em;
+    margin-bottom: 1em;
+    border-radius: 6em;
+    overflow: hidden;
+}
+
+.teacher-box_info div {
+    border-radius: 6em;
+}
+
+.teacher-box_info .teacher-box_info-img {
+    border-radius: 6em;
+}
+
+.teacher-img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.teacher-box_discription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+
+.teacher-name {
+    color: rgb(0, 0, 0);
+}
+
+.comment-header,
+.teacher-box_text-about {
+    font-size: 1.1em;
+    margin-bottom: 0.9em;
+}
+
+.comment-header {
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 0.75em;
+    color: rgb(0, 0, 0);
+}
+
+.main_container .teacher-box:nth-child(2n) {
+    color: rgb(255, 255, 255);
+    background: rgb(118, 193, 60);
+}
+
+.main_container .teacher-box:nth-child(2n) .teacher-box_info {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    margin-right: 0px;
+    margin-left: 3.5em;
+}
+
+.comment-container {
+    width: 70%;
+    position: relative;
+    margin: 0px auto;
+}
+
+.flex-viewport {
+    max-height: 10em;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.slides .comment {
+    max-height: 10em;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -25px;
+    text-align: center;
+}
+
+.flex-control-nav li {
+    display: inline-block;
+    zoom: 1;
+    margin: 0px 6px;
+}
+
+.flex-direction-nav .flex-prev {
+    left: -50px;
+}
+
+.flex-direction-nav a {
+    color: rgba(255, 255, 255, 0);
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    text-decoration: none;
+    margin: -20px 0px 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.flex-prev {
+    width: 2em;
+    height: 2em;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    cursor: pointer;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    outline: none;
+}
+
+.flex-direction-nav .flex-next {
+    right: -50px;
+    text-align: right;
+}
+
+.flex-next {
+    width: 2em;
+    height: 2em;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    outline: none;
+}
+
+.flex-control-paging li a.flex-active {
+    background: rgb(248, 150, 20);
+}
+
+.flex-control-paging li a:hover {
+    background: rgb(133, 23, 92);
+}
+
+.flex-control-paging li a {
+    width: 13px;
+    height: 13px;
+    display: block;
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px inset;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px inset;
+    background: rgba(111, 26, 109, 0.7);
+    border-radius: 20px;
+}
+
+/*Mediа Медиа-запросы*/
+
+@media screen and (max-width: 980px) {
+    .teacher-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .teacher-box_info {
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+    .main_container .teacher-box:nth-child(2n) .teacher-box_info {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+        margin-left: 0;
+    }
+    .comment-container {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
+    .flex-viewport {
+        max-height: 15em;
+    }
+    .slides .comment {
+        max-height: 15em;
+    }
+    .flex-direction-nav a {
+        color: rgba(255, 255, 255, 0);
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        text-decoration: none;
+        margin: -20px 0px 0px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .comment-container {
+        width: 90%;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -25px;
+    }
+    .flex-direction-nav .flex-next {
+        right: -25px;
+    }
+}
